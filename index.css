@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  width: 95vw;
+  margin-top: 10px;
+}
+
+.nav-left {
+  margin-left: 13px;
+  margin-top: 10px;
+}
+
+.nav-left img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.nav-middle {
+  display: flex;
+  color: #111;
+  background: transparent;
+  margin-left: 195px;
+}
+
+.nav-middle p {
+  padding: 12px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav-right input {
+  background: #f5f5f5;
+  border: none;
+  padding: 8px 48px;
+  cursor: text;
+  height: 25px;
+  border-radius: 100px;
+  font-size: 16px;
+  width: 85px;
+  margin-top: 8px;
+}
+
+::placeholder {
+  color: rgb(199, 196, 196);
+}
+
+.heart {
+  width: 21px;
+  height: 21px;
+  padding: 4px;
+  margin-top: 10px;
+}
+
+.cart {
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+}
+
+.search {
+  position: absolute;
+  right: 281px;
+  top: 23px;
+}
+
+.favourite {
+  border: 1px solid #ccc;
+  color: black;
+  background-color: white;
+}
+
+label img {
+  position: relative;
+  right: -2px;
+  top: 19px;
+  width: 19px;
+  height: 19px;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: 45rem;
+}
+
+.left {
+  width: 33vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.7rem;
+  margin-top: -3rem;
+}
+
+.buy {
+  align-items: center;
+  background-color: #fee6e3;
+  border: 2px solid #111;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #111;
+  cursor: pointer;
+  display: flex;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.buy:after {
+  background-color: #111;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform 0.2s ease-out;
+  z-index: -1;
+}
+
+.buy:hover:after {
+  transform: translate(0, 0);
+}
+
+.buy:active {
+  background-color: #ffdeda;
+  outline: 0;
+}
+
+.left p {
+  color: gray;
+  letter-spacing: 0.3px;
+  line-height: 1.4;
+}
+
+.right img {
+  width: 40rem;
+}
