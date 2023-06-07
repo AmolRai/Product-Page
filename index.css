@@ -101,7 +101,6 @@ label img {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  min-height: 45rem;
 }
 
 .left {
@@ -170,4 +169,22 @@ label img {
 
 .right img {
   width: 40rem;
+}
+
+@media (max-width: 1000px) {
+  .home {
+    flex-wrap: wrap;
+    margin-top: 13rem;
+    gap: 5rem;
+  }
+
+  .left {
+    width: 50vw;
+  }
+  .search {
+    display: none;
+  }
+  .nav-middle {
+    display: none;
+  }
 }
